@@ -1,17 +1,16 @@
 # data_visual
-数据大屏可视化
+Data big screen visualization
+# Function
 
-# 功能
+Convenience tool, simple structure, large data screen can be realized by directly transferring data
 
-便利性工具, 结构简单, 直接传数据就可以实现数据大屏
-
-# 安装
+# Install
 
 ```
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple flask
 ```
 
-# 运行main_json将spark计算结果输出到json文件供可视化程序读取
+# Run main_json to output the spark calculation results to a json file for the visualization program to read
 
 ```
 cd data_visual;
@@ -19,12 +18,12 @@ python main_json.py;
 python app.py;
 ```
 
-* 大数据可视化展板通用模板 http://127.0.0.1:5000/          
+* Big data visualization exhibition board general template http://127.0.0.1:5000/          
 
-# 在线示例
+# Online example
 
 
-# 使用
-- 1、编辑 data.py 中的 SourceData 类（或者新增类，新增的话需要编辑 app.py 增加路由）
-- 2、从任何地方读取你的数据，按照 SourceDataDemo 的数据格式，填充到 SourceData 类
-- 3、运行 python app.py 查看数据变更后的效果
+# use
+- 1. Edit the SourceData class in data.py (or add a new class, if you add a new class, you need to edit app.py to add routes)
+- 2. Read your data from anywhere, fill in the SourceData class according to the data format of SourceDataDemo
+- 3. Run python app.py to view the effect of data changes
