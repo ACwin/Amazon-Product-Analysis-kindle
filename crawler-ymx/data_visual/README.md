@@ -24,6 +24,6 @@ python app.py;
 
 
 # use
-- 1. Edit the SourceData class in data.py (or add a new class, if you add a new class, you need to edit app.py to add routes)
-- 2. Read your data from anywhere, fill in the SourceData class according to the data format of SourceDataDemo
-- 3. Run python app.py to view the effect of data changes
+1. Edit the SourceData class in data.py (or add a new class, if you add a new class, you need to edit app.py to add routes)
+2. Read your data from anywhere, fill in the SourceData class according to the data format of SourceDataDemo
+3. Run python app.py to view the effect of data changes
