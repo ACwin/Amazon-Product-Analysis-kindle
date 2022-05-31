@@ -1,0 +1,62 @@
+133.186.144.207 master
+133.186.250.161 slave01
+133.186.213.159 slave02
+
+
+192.168.0.91  master
+192.168.0.103 slave01
+192.168.0.30  slave02
+
+2022bigdata!
+
+sudo passwd root
+hadoop
+
+export HADOOP_HOME=/home/hadoop/app/hadoop-2.7.6 
+export PATH=$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PATH
+
+
+/home/hadoop/app/jdk1.8.0_151
+/home/hadoop/app/hadoop-2.7.6
+
+export JAVA_HOME=/home/hadoop/app/jdk1.8.0_151
+export PATH=$JAVA_HOME/bin:$PATH
+
+
+
+<configuration>
+<property>
+<name>fs.defaultFS</name>
+<value>hdfs://master:9000</value>
+</property>
+<property>
+<name>hadoop.tmp.dir</name>
+<value>/home/hadoop/app/hadoop-2.7.6/tmp</value>
+</property>
+</configuration>
+
+
+<property>
+<name>dfs.replication</name>
+<value>2</value>
+</property>
+<property>
+<name>dfs.http.address</name>
+<value>0.0.0.0:50070</value>
+</property>
+
+
+<property>
+<name>mapreduce.framework.name</name>
+<value>yarn</value>
+</property>
+
+
+<property>
+<name>yarn.resourcemanager.hostname</name>
+<value>master</value>
+</property>
+<property>
+<name>yarn.nodemanager.aux-services</name>
+<value>mapreduce_shuffle</value>
+</property>
